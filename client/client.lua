@@ -1,10 +1,10 @@
 ShowHelpNotification = function(msg, thisFrame, beep, duration)
-    AddTextEntry('rulettNotification', msg)
+    AddTextEntry('bucketNotify', msg)
 
     if thisFrame then
-        DisplayHelpTextThisFrame('rulettNotification', false)
+        DisplayHelpTextThisFrame('bucketNotify', false)
     else
-        BeginTextCommandDisplayHelp('rulettNotification')
+        BeginTextCommandDisplayHelp('bucketNotify')
         EndTextCommandDisplayHelp(0, false, beep, duration or -1)
     end
 end
