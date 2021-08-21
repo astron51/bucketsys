@@ -27,7 +27,7 @@ AddEventHandler('bucketsys:onInvite', function(host, bucketid)
 		while instanceInvite do
             -- Add Player online check
 			Citizen.Wait(0)
-			ShowHelpNotification('Press E to Enter') -- Press E to accept to invite.
+			ShowHelpNotification('Press ~INPUT_CONTEXT~ to Enter') -- Press E to accept to invite.
 			if IsControlJustReleased(0, 38) then
 				TriggerServerEvent('bucketsys:join', instanceInvite.bid)
 				ShowHelpNotification('You joined the session.') -- Entered Instance.
