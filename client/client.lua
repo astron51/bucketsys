@@ -57,7 +57,3 @@ end,false)
 RegisterCommand("leavebucket", function(source, args, rawCommand)
     TriggerServerEvent('bucketsys:leave')
 end,false)
-
-RegisterCommand("eStop", function(source, args, rawCommand)
-    TriggerServerEvent('bucketsys:estop')
-end,false)
